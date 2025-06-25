@@ -33,38 +33,38 @@ const Footer = () => {
 
           <div className="footer-column">
             <h4>About</h4>
-            <ul>
+            
               <li>About Us</li>
               <li>Services</li>
               <li>Blog</li>
               <li>Contact Us</li>
-            </ul>
+            
           </div>
 
           <div className="footer-column">
             <h4>Support</h4>
-            <ul>
+            
               <li>Knowledge base</li>
               <li>Live Chats</li>
-            </ul>
+            
           </div>
 
           <div className="footer-column">
             <h4>Jobs</h4>
-            <ul>
+            
               <li>Our Team</li>
               <li>Leadership</li>
               <li>Privacy Policy</li>
-            </ul>
+            
           </div>
 
           <div className="footer-column">
             <h4>Tables</h4>
-            <ul>
+            
               <li>Nordic chair</li>
               <li>Kruzo chair</li>
               <li>Ergonomic chair</li>
-            </ul>
+            
           </div>
         </div>
       </div>
