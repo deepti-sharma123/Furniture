@@ -26,10 +26,14 @@
     color: white;
 }
 .nav{
+    
 /* transform: translateX(-100%);
     transition: transform 0.7s ease; */
 
 }
+/* .close{
+    display: none;
+} */
 
 .nav ul {
     display: flex;
@@ -830,21 +834,65 @@ body {
 
 }
 
-.activee {
-  width: 100%;
-  height: 90vh;
-  position: absolute;
-  z-index: 999;
-  left: 0;
-  top: 54px;
-  padding-top: 40px;
-  display: flex; /* Removed redundant display: block */
+/* Default styles for the navbar (desktop view) */
+.nav {
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  flex-direction: column;
-  background-color: #3b5d50;
-  animation: nav 0.7s ease;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Adjust spacing between menu items */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Adjust color as needed */
+  font-size: 16px;
+}
+
+/* Hide the menu button in desktop view */
+.menu-btn {
+  display: none;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 54px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    background-color: #3b5d50;
+  }
+
+  .nav.activee {
+    animation: nav 0.7s ease forwards;
+  }
+
+  .nav.close {
+    animation: closed 0.7s ease forwards;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-btn {
+    display: block; /* Show menu button in mobile view */
+    cursor: pointer;
+    font-size: 24px;
+  }
 }
 
 @keyframes nav {
@@ -853,33 +901,40 @@ body {
   }
   to {
     transform: translateX(0);
+    visibility: visible;
   }
-}
-
-.close {
-  width: 100%;
-  height: 90vh;
-  position: absolute;
-  z-index: 999;
-  left: 0;
-  top: 54px;
-  padding-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  flex-direction: column;
-  background-color: #3b5d50;
-  animation: closed 0.7s ease forwards; /* Added 'forwards' to maintain final state */
 }
 
 @keyframes closed {
   from {
     transform: translateX(0);
-    visibility: visible; /* Ensure nav is visible at the start of animation */
+    visibility: visible;
   }
   to {
     transform: translateX(-100%);
-    visibility: hidden; /* Hide nav at the end of animation */
+    visibility: hidden;
   }
+}
+
+/* Optional: General header styles */
+.header-main {
+  background-color: #3b5d50; /* Match your theme */
+  padding: 10px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 24px;
 }
