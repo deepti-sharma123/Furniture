@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({bannerTitle}) => {
   return (
    <>
    <div className="banner-main">
@@ -8,12 +8,12 @@ const Banner = () => {
             <div className="banner">
                 <div className="banner-parentes">
                     <div className="text-banner">
-                        <h1>Modern Interior Design Studio</h1>
+                        <h1>{bannerTitle}</h1>
                         <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
                             velit imperdiet dolor tempor tristique</p>
                         <div className="btn">
                             <a href="#" class="shop">Shop now</a>
-                            <a href="#" class="explore">Explore</a>
+                            <a href="#" class="explores">Explore</a>
                         </div>
                     </div>
                     <div className="img-banner">
