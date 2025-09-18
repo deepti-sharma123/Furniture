@@ -578,7 +578,7 @@ body {
 .testmonial {
     width: 100%;
     text-align: center;
-    padding: 50px 0;
+    padding: 80px 0;
     background-color: #eff2f1;
 }
 
@@ -651,6 +651,7 @@ body {
 
 .Owner-parentes {
     width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -796,7 +797,7 @@ body {
 }
 
 .ourteam-card {
-    width: 33%;
+    width: 23%;
 
 }
 
@@ -1018,6 +1019,10 @@ box-shadow: 0 0 5px rgba(59, 93, 80, 0.5);
     color: #fff;
     margin-bottom: 20px
 }
+.tableChair-main{
+    background-color: #e4f0e7;
+}
+
 
 @media only screen and (max-width: 768px) {
     .nav {
